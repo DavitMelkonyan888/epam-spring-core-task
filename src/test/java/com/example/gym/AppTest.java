@@ -1,4 +1,4 @@
-package com.example;
+package com.example.gym;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
