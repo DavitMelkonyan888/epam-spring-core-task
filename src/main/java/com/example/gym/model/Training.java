@@ -81,4 +81,9 @@ public class Training {
     public void setDuration (Period duration) {
         this.duration = duration;
     }
+    
+    @Override
+    public String toString () {
+        return "Training{" + "id=" + id + ", trainerId=" + trainerId + ", traineeId=" + traineeId + ", name='" + name + '\'' + ", trainingTypeId=" + trainingTypeId + ", date=" + date + ", duration=" + duration + '}';
+    }
 }

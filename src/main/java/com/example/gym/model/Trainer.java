@@ -19,4 +19,9 @@ public class Trainer extends User {
     public void setSpecialization (String specialization) {
         this.specialization = specialization;
     }
+    
+    @Override
+    public String toString () {
+        return "Trainer{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", username='" + username + '\'' + ", password='" + password + '\'' + ", isActive=" + isActive + ", specialization='" + specialization + '\'' +'}';
+    }
 }

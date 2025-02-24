@@ -31,4 +31,9 @@ public class Trainee extends User {
     public void setAddress (String address) {
         this.address = address;
     }
+    
+    @Override
+    public String toString () {
+        return "Trainee{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", username='" + username + '\'' + ", password='" + password + '\'' + ", isActive=" + isActive + ", dateOfBirth=" + dateOfBirth + ", address='" + address + '\'' + '}';
+    }
 }

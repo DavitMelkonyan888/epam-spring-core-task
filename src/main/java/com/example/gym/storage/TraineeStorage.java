@@ -1,7 +1,6 @@
 package com.example.gym.storage;
 
 import com.example.gym.model.Trainee;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
