@@ -34,6 +34,6 @@ public class Trainee extends User {
     
     @Override
     public String toString () {
-        return "Trainee{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", username='" + username + '\'' + ", password='" + password + '\'' + ", isActive=" + isActive + ", dateOfBirth=" + dateOfBirth + ", address='" + address + '\'' + '}';
+        return "Trainee{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", username='" + username + '\'' + ", password='" + password + '\'' + ", isActive=" + isActive + ", dateOfBirth=" + dateOfBirth + ", address='" + address + '\'' + "}\n";
     }
 }

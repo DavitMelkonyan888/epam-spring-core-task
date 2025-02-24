@@ -1,0 +1,21 @@
+id,trainerId,traineeId,name,trainingTypeId,date,duration
+1,1,2,Strength Basics,1,2024-02-10,P7D
+2,2,3,Yoga for Beginners,2,2024-02-11,P14D
+3,3,1,Cardio Burn,3,2024-02-12,P30D
+4,4,5,Pilates Core,4,2024-02-13,P21D
+5,5,4,Weightlifting 101,5,2024-02-14,P10D
+6,6,6,Full Body Aerobics,6,2024-02-15,P7D
+7,7,7,Martial Arts Defense,7,2024-02-16,P14D
+8,8,8,CrossFit Challenge,8,2024-02-17,P30D
+9,9,9,Bodybuilding Basics,9,2024-02-18,P21D
+10,10,10,Personal Strength Training,10,2024-02-19,P10D
+11,1,3,Strength Mastery,1,2024-02-20,P14D
+12,2,4,Yoga Advanced,2,2024-02-21,P21D
+13,3,5,Extreme Cardio,3,2024-02-22,P30D
+14,4,6,Pilates Power,4,2024-02-23,P10D
+15,5,7,Olympic Weightlifting,5,2024-02-24,P7D
+16,6,8,Aerobics Extreme,6,2024-02-25,P14D
+17,7,9,Martial Arts Pro,7,2024-02-26,P30D
+18,8,10,Intense CrossFit,8,2024-02-27,P21D
+19,9,1,Bodybuilding for Athletes,9,2024-02-28,P10D
+20,10,2,Elite Personal Training,10,2024-02-29,P7D

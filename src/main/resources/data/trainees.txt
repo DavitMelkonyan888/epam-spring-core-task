@@ -1,0 +1,11 @@
+id,firstName,lastName,username,password,isActive,dateOfBirth,address
+1,John,Doe,John.Doe2,abc12345XY,true,1995-08-15,123 Main St, City A
+2,Jane,Smith,Jane.Smith,qwe789poi,false,1998-05-22,456 Elm St, City B
+3,Mike,Johnson,Mike.Johnson,zxc456mnb,true,1990-12-10,789 Oak St, City C
+4,Emily,Davis,Emily.Davis,ghj321vbn,true,1992-07-19,321 Pine St, City D
+5,John,Doe,John.Doe3,klm852yui,false,2000-09-30,654 Maple St, City E
+6,Linda,Wilson,Linda.Wilson,opq159asd,true,1997-03-25,987 Cedar St, City F
+7,James,Moore,James.Moore,rst753fgh,true,1988-11-05,258 Birch St, City G
+8,Patricia,Taylor,Patricia.Taylor,uvw258jkl,false,1993-06-14,369 Spruce St, City H
+9,David,Anderson,David.Anderson,xyz369hgf,true,2001-02-28,147 Willow St, City I
+10,Barbara,Martinez,Barbara.Martinez,lmn741zxc,true,1996-04-17,753 Walnut St, City J

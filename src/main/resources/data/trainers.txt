@@ -1,0 +1,11 @@
+id,firstName,lastName,username,password,isActive,specialization
+1,John,Doe,John.Doe,abc12345XY,true,Strength Training
+2,Jane,Smith,Jane.Smith,qwe789poi,false,Yoga
+3,John,Doe,John.Doe1,zxc456mnb,true,Cardio
+4,Emily,Davis,Emily.Davis,ghj321vbn,true,Pilates
+5,Robert,Brown,Robert.Brown,klm852yui,false,Weightlifting
+6,Linda,Wilson,Linda.Wilson,opq159asd,true,Aerobics
+7,James,Moore,James.Moore,rst753fgh,true,Martial Arts
+8,Patricia,Taylor,Patricia.Taylor,uvw258jkl,false,CrossFit
+9,David,Anderson,David.Anderson,xyz369hgf,true,Bodybuilding
+10,Barbara,Martinez,Barbara.Martinez,lmn741zxc,true,Personal Training

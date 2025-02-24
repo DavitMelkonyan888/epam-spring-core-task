@@ -1,0 +1,11 @@
+id,name
+1,Strength Training
+2,Yoga
+3,Cardio
+4,Pilates
+5,Weightlifting
+6,Aerobics
+7,Martial Arts
+8,CrossFit
+9,Bodybuilding
+10,Personal Training
