@@ -11,4 +11,6 @@ public interface TrainingTypeDAO {
     void save (TrainingType trainingType);
     
     List<TrainingType> getAllTrainingTypes ();
+    
+    TrainingType getTrainingType (long trainingTypeId);
 }

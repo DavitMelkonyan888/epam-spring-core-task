@@ -61,7 +61,6 @@ public class GymFacade implements InitializingBean {
                     }
                     String[] fields = line.split(",");
                     
-                    //TODO save in storage Maps
                     if (path.equals(trainersPath)) {
                         Trainer trainer = new Trainer(Long.parseLong(fields[0]), fields[1], fields[2], fields[3], fields[4], Boolean.parseBoolean(fields[5]), fields[6]);
                         trainerService.createTrainer(trainer);
@@ -115,5 +114,33 @@ public class GymFacade implements InitializingBean {
     
     public void createTrainingType (TrainingType trainingType) {
         trainingService.createTrainingType(trainingType);
+    }
+    
+    public TrainingType getTrainingType (long trainingTypeId) {
+        return trainingService.getTrainingType(trainingTypeId);
+    }
+    
+    public void createTraining (Training newTraining) {
+        trainingService.createTraining(newTraining);
+    }
+    
+    public void createTrainer (Trainer newTrainer) {
+        trainerService.createTrainer(newTrainer);
+    }
+    
+    public void createTrainee (Trainee newTrainee) {
+        traineeService.createTrainee(newTrainee);
+    }
+    
+    public void updateTrainer (Trainer updatedTrainer) {
+        trainerService.updateTrainer(updatedTrainer);
+    }
+    
+    public void updateTrainee (Trainee updatedTrainee) {
+        traineeService.updateTrainee(updatedTrainee);
+    }
+    
+    public void deleteTrainee (long deletedTraineeId) {
+        traineeService.deleteTrainee(deletedTraineeId);
     }
 }

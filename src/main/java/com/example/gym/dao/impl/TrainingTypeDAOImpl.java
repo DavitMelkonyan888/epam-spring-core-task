@@ -36,4 +36,9 @@ public class TrainingTypeDAOImpl implements TrainingTypeDAO {
     public List <TrainingType> getAllTrainingTypes () {
         return new ArrayList <>(trainingTypeStorage.getTrainingTypes().values());
     }
+    
+    @Override
+    public TrainingType getTrainingType (long trainingTypeId) {
+        return trainingTypeStorage.getTrainingTypes().getOrDefault(trainingTypeId, null);
+    }
 }

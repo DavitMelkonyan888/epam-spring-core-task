@@ -39,6 +39,10 @@ public class TrainerServiceImpl implements TrainerService {
     
     @Override
     public void updateTrainer (Trainer trainer) {
+        String username = UsernameGenerator.generate(trainer.getFirstName(), trainer.getLastName(), traineeDAO.getAllTrainees(), trainerDAO.getAllTrainers());
+        String password = PasswordGenerator.generate();
+        trainer.setUsername(username);
+        trainer.setPassword(password);
         trainerDAO.update(trainer);
     }
     

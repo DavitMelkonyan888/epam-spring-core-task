@@ -17,4 +17,6 @@ public interface TrainingService {
     
     void createTrainingType (TrainingType trainingType);
     List<TrainingType> getAllTrainingTypes ();
+    
+    TrainingType getTrainingType (long trainingTypeId);
 }

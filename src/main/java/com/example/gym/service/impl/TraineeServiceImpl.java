@@ -38,6 +38,10 @@ public class TraineeServiceImpl implements TraineeService {
     
     @Override
     public void updateTrainee (Trainee trainee) {
+        String username = UsernameGenerator.generate(trainee.getFirstName(), trainee.getLastName(), traineeDAO.getAllTrainees(), trainerDAO.getAllTrainers());
+        String password = PasswordGenerator.generate();
+        trainee.setUsername(username);
+        trainee.setPassword(password);
         traineeDAO.update(trainee);
     }
     

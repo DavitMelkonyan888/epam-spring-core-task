@@ -51,4 +51,9 @@ public class TrainingServiceImpl implements TrainingService {
     public List <TrainingType> getAllTrainingTypes () {
         return trainingTypeDAO.getAllTrainingTypes();
     }
+    
+    @Override
+    public TrainingType getTrainingType (long trainingTypeId) {
+        return trainingTypeDAO.getTrainingType(trainingTypeId);
+    }
 }
