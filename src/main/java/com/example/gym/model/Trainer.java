@@ -22,6 +22,6 @@ public class Trainer extends User {
     
     @Override
     public String toString () {
-        return "Trainer{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", username='" + username + '\'' + ", password='" + password + '\'' + ", isActive=" + isActive + ", specialization='" + specialization + '\'' + "}\n";
+        return "Trainer{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", username='" + username + '\'' + ", password='" + "**********" + '\'' + ", isActive=" + isActive + ", specialization='" + specialization + '\'' + "}\n";
     }
 }

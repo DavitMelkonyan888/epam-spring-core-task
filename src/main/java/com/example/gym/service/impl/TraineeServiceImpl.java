@@ -5,6 +5,8 @@ import com.example.gym.dao.TrainerDAO;
 import com.example.gym.model.Trainee;
 import com.example.gym.service.TraineeService;
 import com.example.gym.utils.*;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +15,8 @@ import java.util.List;
 
 @Service
 public class TraineeServiceImpl implements TraineeService {
+    
+//    private static final Logger logger = LoggerFactory.getLogger(TraineeServiceImpl.class);
     
     private TraineeDAO traineeDAO;
     private TrainerDAO trainerDAO;
@@ -29,6 +33,7 @@ public class TraineeServiceImpl implements TraineeService {
     
     @Override
     public void createTrainee (Trainee trainee) {
+//        logger.info("Creating new Trainee: {} {}", trainee.getFirstName(), trainee.getLastName());
         String username = UsernameGenerator.generate(trainee.getFirstName(), trainee.getLastName(), traineeDAO.getAllTrainees(), trainerDAO.getAllTrainers());
         String password = PasswordGenerator.generate();
         trainee.setUsername(username);

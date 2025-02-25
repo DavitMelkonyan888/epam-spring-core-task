@@ -1,10 +1,10 @@
 package com.example.gym.dao.impl;
 
 import com.example.gym.dao.TrainerDAO;
-import com.example.gym.model.Trainee;
 import com.example.gym.model.Trainer;
 import com.example.gym.storage.TrainerStorage;
-import com.example.gym.storage.TraineeStorage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -15,6 +15,7 @@ import java.util.Map;
 @Component
 public class TrainerDAOImpl implements TrainerDAO {
     
+    private static final Logger logger = LoggerFactory.getLogger(TrainerDAOImpl.class);
     private TrainerStorage trainerStorage;
     
     @Autowired
@@ -24,16 +25,19 @@ public class TrainerDAOImpl implements TrainerDAO {
     
     @Override
     public List <Trainer> getAllTrainers () {
+        logger.info("Fetching all trainers...");
         return new ArrayList <>(trainerStorage.getTrainers().values());
     }
     
     @Override
     public void save (Trainer trainer) {
+        logger.info("Creating new Trainer: {} {} ({})", trainer.getFirstName(), trainer.getLastName(), trainer.getUsername());
         Map <Long, Trainer> trainers = trainerStorage.getTrainers();
         if (trainers.containsKey(trainer.getId())) {
-            System.out.println("\n!!!Trainer with ID " + trainer.getId() + " already exists.!!!\n");
+            logger.warn("Trainer with ID {} already exists!", trainer.getId());
         } else {
             trainers.put(trainer.getId(), trainer);
+            logger.debug("Trainer saved successfully: {}", trainer);
         }
     }
     
@@ -42,13 +46,21 @@ public class TrainerDAOImpl implements TrainerDAO {
         Map <Long, Trainer> trainers = trainerStorage.getTrainers();
         if (trainers.containsKey(trainer.getId())) {
             trainers.put(trainer.getId(), trainer);
+            logger.debug("Trainer updated successfully: {}", trainer);
         } else {
-            System.out.println("\n!!!Trainer with ID " + trainer.getId() + " not found.!!!\n");
+            logger.error("Trainer not found with ID: {}", trainer.getId());
         }
     }
     
     @Override
     public Trainer get (long trainerId) {
-        return trainerStorage.getTrainers().getOrDefault(trainerId, null);
+        logger.info("Fetching Trainer with ID: {}", trainerId);
+        Trainer trainer = trainerStorage.getTrainers().getOrDefault(trainerId, null);
+        
+        if (trainer == null) {
+            logger.error("Trainer not found with ID: {}", trainerId);
+        }
+        
+        return trainer;
     }
 }
