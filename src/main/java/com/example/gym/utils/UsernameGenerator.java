@@ -5,7 +5,6 @@ import com.example.gym.model.Trainer;
 import com.example.gym.model.User;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class UsernameGenerator {
     

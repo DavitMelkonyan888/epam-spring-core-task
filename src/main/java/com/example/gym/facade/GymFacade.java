@@ -22,9 +22,9 @@ import java.util.List;
 @PropertySource ( value = "classpath:/application.properties" )
 public class GymFacade implements InitializingBean {
     
-    private TraineeService traineeService;
-    private TrainerService trainerService;
-    private TrainingService trainingService;
+    private final TraineeService traineeService;
+    private final TrainerService trainerService;
+    private final TrainingService trainingService;
     
     @Value ( "${storage.path.trainings}" )
     private String trainingsPath;
